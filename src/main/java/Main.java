@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int opcao = -1;
+        int opcao;
 
         do {
             System.out.println("\n=====SISTEMA DE CONTROLE DE DESPESAS======");
@@ -44,6 +44,9 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Gerenciando usuário");
+                    break;
+                case 0:
+                    System.out.println("Saindo...");
                     break;
                 default:
                     System.out.println("Código inválido!!");
