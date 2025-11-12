@@ -1,3 +1,6 @@
+import entity.Despesa;
+
+import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -28,7 +31,16 @@ public class Main {
 
             switch (opcao){
                 case 1:
-                    System.out.println("Entrando na despesa");
+                    System.out.print("Digite o valor da despesa: ");
+                    var valor = sc.nextDouble();
+                    System.out.print("Digite a data da despesa (dd/MM/yyy): ");
+                    var data = sc.nextLine();
+                    System.out.print("Digite a descrição da despesa: ");
+                    var descricao = sc.nextLine();
+                    System.out.print("A despesa foi paga (s/n): ");
+                    var st = sc.nextLine();
+                    boolean status = st == "s";
+                    Despesa despesa = new Despesa(valor,data,descricao,status);
                     break;
                 case 2:
                     System.out.println("Anotando pagamento");

@@ -22,10 +22,27 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 3. **Terceira Fase**: Criptografia e detalhes finais
 
 ## 📊 Status do Projeto
-**Versão Atual**: 0.0.1  
-**Status**: ✅ Primeiro Commit Concluído
+**Versão Atual**: 0.0.2  
+**Status**: 🎯 Prioridades Definidas + POC Planejado
 
-## 🚀 Funcionalidades já Implementadas
+## 🎯 SEPARAÇÃO DE PRIORIDADES
+
+### 🟢 ALTA PRIORIDADE (MVP - Commit 0.1.0)
+- [ ] **Entrar Despesa** - Cadastro com descrição, valor e categoria
+- [ ] **Listar Despesas** - Visualização básica em console
+- [ ] **Anotar Pagamento** - Marcar despesa como paga
+- [ ] **Persistência Básica** - Salvar/ler de arquivo .txt
+
+### 🟡 MÉDIA PRIORIDADE (Versão 0.2.0)
+- [ ] **Tipos de Despesa** - Categorização com herança
+- [ ] **Datas** - Vencimento e data de pagamento
+- [ ] **Filtros** - Buscar por status/categoria
+
+### 🔴 BAIXA PRIORIDADE (Versão 0.3.0)
+- [ ] **Sistema de Usuários** - Login com criptografia
+- [ ] **Relatórios** - Estatísticas e relatórios
+- [ ] **Interface Avançada** - Melhorias de UX
+
 
 ### ✅ Versão 0.0.1
 - [x] **Menu Interativo**
@@ -58,7 +75,55 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 - `listarDespesas()`: Exibe despesas por filtro
 - `gerenciarUsuarios()`: CRUD de usuários
 
+## 🔬 POC - PROVA DE CONCEITO
+
+**Objetivo**: Validar arquitetura de persistência em arquivo texto  
+**Funcionalidade Testada**: "Entrar Despesa" completa  
+**Métricas de Sucesso**:
+- ✅ Dados persistem após fechar programa
+
+
+**Tecnologias Testadas**:
+- Serialização em arquivo texto
+- Classes Java com encapsulamento
+- Tratamento de exceções
+
+---
+
+## 📦 MVP - PRODUTO MÍNIMO VIÁVEL
+
+**Definição**: Sistema que permite:
+- ✅ Cadastrar despesas (descrição, valor, categoria)
+- ✅ Listar despesas cadastradas
+- ✅ Marcar despesas como pagas
+- ✅ Dados persistem em arquivo
+
+**Escopo do MVP**:
+`java`
+
+// Funcionalidades ESSENCIAIS
+1. CadastrarDespesa(descricao, valor, categoria)
+2. ListarDespesas()
+3. MarcarComoPaga(id)
+4. SalvarEmArquivo()
+5. CarregarDeArquivo()
+
+
 ## 📝 Changelog
+
+### [v0.0.2] - 2024-11-10
+#### ✅ Adicionado
+- Definição clara de prioridades (Alta/Média/Baixa)
+- Prova de Conceito (POC) para persistência
+- Escopo do Produto Mínimo Viável (MVP)
+- Roadmap detalhado das próximas versões
+- Arquitetura inicial do sistema
+
+#### 🎯 Planejado para v0.0.3
+
+1. Implementação da classe Despesa
+2. Sistema de persistência em arquivo texto
+3. POC funcional do cadastro de despesas
 
 ### [v0.0.1] - 2024-10-31
 #### ✅ Adicionado
