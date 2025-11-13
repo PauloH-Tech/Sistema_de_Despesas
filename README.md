@@ -22,8 +22,22 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 3. **Terceira Fase**: Criptografia e detalhes finais
 
 ## 📊 Status do Projeto
-**Versão Atual**: 0.0.2  
-**Status**: 🎯 Prioridades Definidas + POC Planejado
+**Versão Atual**: 0.0.3  
+**Status**: 🎉 MVP FUNCIONAL CONCLUÍDO
+
+#### 🟢 CORE DO SISTEMA
+- [x] **Cadastro de Despesas** - Com valor, data, descrição e status
+- [x] **Listagem Completa** - Todas as despesas com formatação
+- [x] **Filtros por Status** - Despesas em aberto vs pagas
+- [x] **Registro de Pagamentos** - Marcar despesas como pagas
+- [x] **Persistência em Arquivo** - Dados salvos automaticamente
+
+#### 🛠️ TECNICAMENTE
+- [x] **Arquitetura em Camadas** - Entity, Service, Main
+- [x] **Tratamento de Exceções** - Entradas inválidas tratadas
+- [x] **Persistência em .txt** - Arquivo `data/despesas.txt`
+- [x] **Interface Amigável** - Emojis e formatação clara
+
 
 ## 🎯 SEPARAÇÃO DE PRIORIDADES
 
@@ -43,18 +57,6 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 - [ ] **Relatórios** - Estatísticas e relatórios
 - [ ] **Interface Avançada** - Melhorias de UX
 
-
-### ✅ Versão 0.0.1
-- [x] **Menu Interativo**
-    - Menu principal com 6 opções 
-    - Loop de execução até seleção de saída
-    - Tratamento de exceções para entradas inválidas
-
-- [x] **Estrutura Base**
-    - Classe `Main` como ponto de partida
-    - Uso de `Scanner` para entrada de dados
-    - Controle de fluxo com `switch-case`
-  
 ## 🏛️ Arquitetura Planejada
 
 ### Classes Previstas
@@ -66,9 +68,6 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 | `DespesaAlimentacao` | Concreta | Herda de `Despesa` |
 | `Usuario` | Concreta | Gerencia dados do usuário |
 | `TipoDespesa` | Concreta | Categorias de despesas |
-
-### Interfaces Planejadas
-- `Pagavel`: Define um tipo de contrato para objetos que podem ser pagos
 
 ### Métodos Principais Previstos
 - `registrarDespesa()`: Cadastra nova despesa
@@ -110,6 +109,23 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 
 
 ## 📝 Changelog
+
+
+### [v0.0.3] - 2025-11-12
+#### ✅ IMPLEMENTADO
+- Sistema completo de cadastro de despesas
+- Persistência automática em arquivo texto
+- Listagens com filtros (todas/abertas/pagas)
+- Registro de pagamentos funcional
+- Tratamento robusto de exceções
+- Interface de usuário melhorada
+
+#### 🎯 CARACTERÍSTICAS
+- **100% Funcional** - Todas operações básicas working
+- **Dados Persistentes** - Sobrevive a reinicializações
+- **Interface Intuitiva** - Feedback visual claro
+- **Código Organizado** - Boas práticas de POO
+
 
 ### [v0.0.2] - 2025-11-10
 #### ✅ Adicionado
