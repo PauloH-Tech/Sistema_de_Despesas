@@ -111,7 +111,7 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 
 ## 📝 Changelog
 
-### [v0.0.2] - 2024-11-10
+### [v0.0.2] - 2025-11-10
 #### ✅ Adicionado
 - Definição clara de prioridades (Alta/Média/Baixa)
 - Prova de Conceito (POC) para persistência
@@ -125,7 +125,7 @@ conceitos de Programação Orientada a Objetos (POO) para gerenciar despesas.
 2. Sistema de persistência em arquivo texto
 3. POC funcional do cadastro de despesas
 
-### [v0.0.1] - 2024-10-31
+### [v0.0.1] - 2025-10-31
 #### ✅ Adicionado
 - Menu principal com 6 funcionalidades
 - Sistema de navegação entre as opções
